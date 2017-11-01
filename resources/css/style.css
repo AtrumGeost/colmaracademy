@@ -274,3 +274,16 @@ h3 {
   margin-top: 8px;
   line-height: 1.4;
 }
+
+/*Footer section*/
+
+footer {
+  border-top: 1px solid gray;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links span {
+  margin-right: 8px;
+}
