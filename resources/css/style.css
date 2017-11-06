@@ -341,11 +341,65 @@ footer {
   }
   /*Information section*/
   .information {
+
+  }
+  .main-image-container.info-image {
     display: none;
   }
 
+  .features {
+    border: 0;
+    width: 100%;
+  }
+  .feature {
+   flex-direction: column;
+   padding: 0;
+  }
+
+  .feature-content{
+    padding-top: 16px;
+    padding-bottom: 64px;
+    width: 90%;
+  }
+  .feature-image {
+    width: 100%;
+  }
+
+  .feature-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .feature:last-child {
+    background-color: transparent;
+  }
   /*Courses section*/
+
   .courses {
+    background-color: transparent;
+    padding: 32px 32px;
+  }
+
+  .course-container {
+    flex-direction: column;
+  }
+
+  .course {
+    width: 100%;
+  }
+
+  .course-content {
+    padding: 16px 0 24px 16px;
+    background-color: gray;
+  }
+
+  .course-content h3 {;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  .course img, .course-content span, .course-content p {
     display: none;
   }
 
