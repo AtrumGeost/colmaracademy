@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
@@ -63,7 +63,7 @@ header {
 
 .cta {
   display: flex;
-  background-color: gray;
+  background-color: #F2F3F3;
   padding: 32px 24px;
 }
 
@@ -130,7 +130,7 @@ h2 {
 
 .features {
   width: 40%;
-  border-left: 1px solid gray;
+  border-left: 1px solid #F2F3F3;
   /*padding-left: 16px;*/
 
 }
@@ -141,7 +141,7 @@ h2 {
 }
 
 .feature:last-child {
-  background-color: gray;
+  background-color: #F2F3F3;
 }
 
 .feature-image {
@@ -179,7 +179,7 @@ h3 {
 /*Courses section*/
 
 .courses {
-  background-color: gray;
+  background-color: #F2F3F3;
   padding: 32px 72px;
 }
 
@@ -268,7 +268,7 @@ h3 {
 }
 
 .thesis-item:first-child {
-  background-color: gray;
+  background-color: #F2F3F3;
 }
 
 .thesis-image {
@@ -295,7 +295,7 @@ h3 {
 /*Footer section*/
 
 footer {
-  border-top: 1px solid gray;
+  border-top: 1px solid #F2F3F3;
   padding: 16px 24px;
   display: flex;
   justify-content: space-between;
@@ -341,6 +341,7 @@ footer {
   }
   /*Information section*/
   .information {
+    padding-bottom: 0;
 
   }
   .main-image-container.info-image {
@@ -373,24 +374,37 @@ footer {
   .feature:last-child {
     background-color: transparent;
   }
+
+  .feature:last-child .feature-content {
+    padding-bottom: 32px;
+  }
   /*Courses section*/
 
   .courses {
+    border-top: 1px solid #F2F3F3;
     background-color: transparent;
-    padding: 32px 32px;
+    padding: 32px 0 32px 0;
+    border-bottom: 1px solid #F2F3F3;
+  }
+
+  .courses h2 {
+    margin-top: 0;
   }
 
   .course-container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
   }
 
   .course {
-    width: 100%;
+    width: 90%;
   }
 
   .course-content {
     padding: 16px 0 24px 16px;
-    background-color: gray;
+    background-color: #F2F3F3;
   }
 
   .course-content h3 {;
@@ -405,11 +419,34 @@ footer {
 
   /*Thesis section*/
   .thesis {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .thesis h2 {
+    margin-top: 0;
+  }
+
+  .thesis-sidebar {
+    display: none;
+  }
+
+  .thesis-video {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .video-desc {
     display: none;
   }
 
   /*Footer section*/
+
   footer {
+    border-top: 0;
+  }
+
+  .footer-links {
     display: none;
   }
 
